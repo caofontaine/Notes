@@ -14,11 +14,7 @@ External stylesheets are stored in CSS files.
   - One file can change the single look of a web page.
 ## CSS Syntax and Selectors
   ### CSS Syntax
-<<<<<<< HEAD
   - ![CSS Syntax](https://github.com/caofontaine/Notes/tree/master/CSS/img/syntax.png "CSS Syntax")
-=======
-  - ![alt text](https://github.com/caofontaine/Notes/blob/master/CSS/img/syntax.png "CSS Syntax")
->>>>>>> 500ba3a4930349e8b664915d1bea3fe08cb01599
 	* Selector - HTML element you want to style
     * Declaration block - one or more declarations separated by semi-colon
     * Each declaration has a property name and value.
@@ -26,7 +22,16 @@ External stylesheets are stored in CSS files.
   - Used to “find” HTML elements based on their element name, id, class, attribute, etc.
   ### The element Selector
   - Selects elements based on element name.
-  - Ex. <p> = p
+  - Ex. &lt;p&gt; = p
   ### The id Selector
   - Uses the id attribute of an HTML element to select a specific element
   - To select an element based on id, use # with id name.
+  ### The class Selector
+  - Uses the class attribute of an HTML element to select a specific element
+  - To select an element based on class, use . with class name.
+  - p.classname to style select HTML element with that class name.
+  ### Grouping Selectors
+  - You can group elements with the same styling by separating each element with a comma before beginning the declaration block.
+  ### CSS Comments
+  - Help explain the code. Enclosed in /* */
+

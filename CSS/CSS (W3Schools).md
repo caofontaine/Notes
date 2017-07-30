@@ -14,7 +14,11 @@ External stylesheets are stored in CSS files.
   - One file can change the single look of a web page.
 ## CSS Syntax and Selectors
   ### CSS Syntax
+<<<<<<< HEAD
   - ![CSS Syntax](https://github.com/caofontaine/Notes/tree/master/CSS/img/syntax.png "CSS Syntax")
+=======
+  - ![alt text](https://github.com/caofontaine/Notes/blob/master/CSS/img/syntax.png "CSS Syntax")
+>>>>>>> 500ba3a4930349e8b664915d1bea3fe08cb01599
 	* Selector - HTML element you want to style
     * Declaration block - one or more declarations separated by semi-colon
     * Each declaration has a property name and value.

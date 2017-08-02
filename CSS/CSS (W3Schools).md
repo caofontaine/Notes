@@ -34,4 +34,23 @@ External stylesheets are stored in CSS files.
   - You can group elements with the same styling by separating each element with a comma before beginning the declaration block.
   ### CSS Comments
   - Help explain the code. Enclosed in /* */
+## CSS How To…
+  ### Three Ways to Insert CSS
+  - External style sheet
+  - Internal style sheet
+  - Inline style
+  ### External Stylesheets
+  - You can change the look of a web page by including a file.
+  - In the &lt;head&gt; include a &lt;link&gt; which has the path to your stylesheet.
+  - ```<link rel="stylesheet" type="text/css" href="mystyle.css">```
+  ### Internal Stylesheets
+  - Can be used if a page has one single style.
+  - Enclosed in &lt;style&gt; inside &lt;head&gt;
+  ### Inline Styles
+  - Apply a unique style for a single element.
+  - Use style attribute on the relevant element.
+  ### Multiple Stylesheets
+  - If properties are defined for a selector in multiple stylesheets, then the value from the last read stylesheet will be used.
+  ### Cascading Order
+  - Inline style, External & Internal Stylesheets, Browser Default
 

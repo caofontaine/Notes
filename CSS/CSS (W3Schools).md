@@ -98,5 +98,39 @@ Allows you to specify the style, width, and color of an element’s border.
     * none - Defines no border
     * hidden - Defines a hidden border
   - It can have one to four values (top, right, bottom, left).
+  ### Border Width
+  - The border-width property specifies the width of the four borders
+  - The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+  - The border-width property can have from one to four values (top, right, bottom, left).
+  ### Border Color
+  - The border-color property is used to set the color of the four borders.
+  - Color can be set by name, RGB, or HEX.
+  - The border-color property can have from one to four values (top, right, bottom, left). 
+  - If border-color is not set, it inherits the color of the element.
+  ### Border - Individual Sides
+  - You can specify each of the border (top, right, bottom, left).
+  - ```p {
+         border-top-style: dotted;
+         border-right-style: solid;
+         border-bottom-style: dotted;
+         border-left-style: solid;
+       }```
+  - If border-style has two properties:
+    * border-style: dotted solid;
+      - top and bottom borders are dotted
+      - right and left borders are solid
+  ### Border - Shorthand Property
+  - You can use the shorthand, denoted has “border”. Order as follows
+    * border-width
+    * border-style (required)
+    * border-color
+  - ```border: 5px solid red;```
+  - Shorthand can be done for individual sides of a border as well.
+    * border-left: 6px solid red;
+  ### Rounded Borders
+  - The border-radius property is used to add rounded corners to a border.
+    * ```border-radius: 5px;```
+  - Not available in IE8 or older browsers.
+
 
 

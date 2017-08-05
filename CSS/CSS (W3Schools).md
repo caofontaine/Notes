@@ -109,12 +109,14 @@ Allows you to specify the style, width, and color of an element’s border.
   - If border-color is not set, it inherits the color of the element.
   ### Border - Individual Sides
   - You can specify each of the border (top, right, bottom, left).
-  - ```p {
+  - ```
+       p {
          border-top-style: dotted;
          border-right-style: solid;
          border-bottom-style: dotted;
          border-left-style: solid;
-       }```
+       }
+	```
   - If border-style has two properties:
     * border-style: dotted solid;
       - top and bottom borders are dotted
@@ -131,6 +133,40 @@ Allows you to specify the style, width, and color of an element’s border.
   - The border-radius property is used to add rounded corners to a border.
     * ```border-radius: 5px;```
   - Not available in IE8 or older browsers.
+## CSS Margins
+Used to generate space between elements.
+Properties set the size of the white space outside the border.
+You can set the margin for each side  - top, right, bottom, left
+  ### Margin - Individual Sides
+  - margin-top
+  - margin-right
+  - margin-bottom
+  - margin-left
+  - All margin properties can have the following values:
+    * auto - the browser calculates the margin
+    * length - specifies a margin in px, pt, cm, etc.
+    * % - specifies a margin in % of the width of the containing element
+    * inherit - specifies that the margin should be inherited from the parent element
+  ### Margin - Shorthand Property
+  - Just use shorthand “margin” to define top, right, bottom, left margin sides.
+  - ```margin: 100px 150px 100px 80px;```
+  ### The auto Value
+  - Setting the margin property to auto will center the element within its container.
+  - The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+  ### The inherit Value
+  - Allows the margin property to be inherited from its parent container element.
+  ### Margin Collapse
+  - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+  - This does not happen on left and right margins. Only top and bottom margins.
+  - ```
+       h1 {
+         margin: 0 0 50px 0;
+       }
 
-
+       h2 {
+         margin: 20px 0 0 0;
+       }
+    ```
+    * In the example above, the <h1> element has a bottom margin of 50px. The <h2> element has a top margin set to 20px.
+	* Common sense would seem to suggest that the vertical margin between the <h1> and the <h2> would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
 

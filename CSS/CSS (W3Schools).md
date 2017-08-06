@@ -167,6 +167,28 @@ You can set the margin for each side  - top, right, bottom, left
          margin: 20px 0 0 0;
        }
     ```
-    * In the example above, the <h1> element has a bottom margin of 50px. The <h2> element has a top margin set to 20px.
-	* Common sense would seem to suggest that the vertical margin between the <h1> and the <h2> would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
+    * In the example above, the &lt;h1&gt; element has a bottom margin of 50px. The &lt;h2&gt; element has a top margin set to 20px.
+	* Common sense would seem to suggest that the vertical margin between the &lt;h1&gt; and the &lt;h2&gt; would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
+## CSS Padding
+Generate space around content.
+Clears an area around the content (inside the border) of an element.
+Can set the padding for each side - top, right, bottom, left
+  ### Padding - Individual Sides
+  - padding-top
+  - padding-right
+  - padding-bottom
+  - padding-left
+  - All margin properties can have the following values:
+    * length - specifies a margin in px, pt, cm, etc.
+    * % - specifies a margin in % of the width of the containing element
+    * inherit - specifies that the margin should be inherited from the parent element
+  ### Padding - Shorthand Property
+  - Just use shorthand “padding” to define top, right, bottom, left padding sides
+  - ```padding: 50px 30px 50px 80px;```
+## CSS Height and Width
+Set the height and width of an element.
+Can be set 3 ways:
+  1. Auto (browser sets it)
+..1. length values, like px, cm, etc.
+..2. A percent of the containing block
 

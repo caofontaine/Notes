@@ -188,7 +188,30 @@ Can set the padding for each side - top, right, bottom, left
 ## CSS Height and Width
 Set the height and width of an element.
 Can be set 3 ways:
-  1. Auto (browser sets it)
-..1. length values, like px, cm, etc.
-..2. A percent of the containing block
+1. Auto (browser sets it)
+2. length values, like px, cm, etc.
+3. A percent of the containing block
+  ### Setting max-width
+  - Sets maximum width of an element.
+    * Can be specified in 3 ways:
+      - length values, like px, cm, etc.
+      - A percent of the containing block
+      - none - meaning no maximum width
+  - Issues will arise when browser window is smaller than specified width.
+  - max-width overrides width property
+## CSS Box Model
+A box that wraps around every HTML element. Consists of margins, borders, padding, and the actual content.
+![CSS Box Model](https://github.com/caofontaine/Notes/blob/master/CSS/img/boxmodel.png "CSS Box Model")
+- Content - The content of the box, where text and images appear
+- Padding - Clears an area around the content. The padding is transparent
+- Border - A border that goes around the padding and content
+- Margin - Clears an area outside the border. The margin is transparent
+  ### Width and Height of an Element
+  - Setting the width and height only measures the content area.
+  - To calculate the full width and height of any element, you must add the margins, border, and padding sizes along with the content width and height sizes.
+  - Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+  - Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+## CSS Outline
+Specify style, color, and width of an outline.
+Drawn around the element, outside the border, to make it “stand out”.
 

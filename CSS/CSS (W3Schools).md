@@ -202,10 +202,10 @@ Can be set 3 ways:
 ## CSS Box Model
 A box that wraps around every HTML element. Consists of margins, borders, padding, and the actual content.
 ![CSS Box Model](https://github.com/caofontaine/Notes/blob/master/CSS/img/boxmodel.png "CSS Box Model")
-- Content - The content of the box, where text and images appear
-- Padding - Clears an area around the content. The padding is transparent
-- Border - A border that goes around the padding and content
-- Margin - Clears an area outside the border. The margin is transparent
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
   ### Width and Height of an Element
   - Setting the width and height only measures the content area.
   - To calculate the full width and height of any element, you must add the margins, border, and padding sizes along with the content width and height sizes.
@@ -214,4 +214,35 @@ A box that wraps around every HTML element. Consists of margins, borders, paddin
 ## CSS Outline
 Specify style, color, and width of an outline.
 Drawn around the element, outside the border, to make it “stand out”.
+Not part of the element’s dimensions, or part of the total width and height of the element.
+  ### Outline Style
+  - Specifies the style of the outline.
+    * dotted - Defines a dotted outline
+    * dashed - Defines a dashed outline
+    * solid - Defines a solid outline
+    * double - Defines a double outline
+    * groove - Defines a 3D grooved outline. The effect depends on the outline-color value
+    * ridge - Defines a 3D ridged outline. The effect depends on the outline-color value
+    * inset - Defines a 3D inset outline. The effect depends on the outline-color value
+    * outset - Defines a 3D outset outline. The effect depends on the outline-color value
+    * none - Defines no outline
+    * hidden - Defines a hidden outline
+  ### Outline Color
+  - Sets the color of the outline.
+  - Color is set by:
+    * name - specify a color name, like "red"
+    * RGB - specify a RGB value, like "rgb(255,0,0)"
+    * Hex - specify a hex value, like "#ff0000"
+    * invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)
+  ### Outline Width
+  - Specifies the width out an outline.
+  - Can be set by:
+    * A specific size (in px, pt, cm, em, etc)
+    * By using one of the three pre-defined values: thin, medium, or thick
+  ### Outline - Shorthand Property
+  - Can specify all options in “outline” property.
+    * outline-width
+    * outline-style (required)
+    * outline-color
+    * outline: 5px dotted red;
 

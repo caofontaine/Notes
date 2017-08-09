@@ -245,4 +245,37 @@ Not part of the element’s dimensions, or part of the total width and height of
     * outline-style (required)
     * outline-color
     * outline: 5px dotted red;
+## CSS Text
+  ### Text Color
+  - Sets the color of the text.
+  - Specified by:
+    * a color name - like "red"
+    * a HEX value - like "#ff0000"
+    * an RGB value - like "rgb(255,0,0)"
+  ### Text Alignment
+  - The "text-align" property sets the horizontal alignment of content.
+  - Can be set left or right aligned, centered, or justified.
+    * Justify value stretches the lines so that each line has equal width (like in newspapers and magazines)
+  ### Text Decoration
+  - The "text-decoration" property sets or removes decorations from text.
+  - The value text-decoration: none; is often used to remove underlines from links
+  ### Text Transformation
+  - "text-transform" property changes text to uppercase or lowercase, or capitalize the first letter of each word.
+  ### Text Indentation
+  - "text-indent" specifies the indentation of the first line of text.
+  ### Letter Spacing
+  - "letter-spacing" specifies space between characters in text.
+  ### Line Height
+  - "line-height" specifies space between lines
+  ### Text Direction
+  - "direction" property changes the text direction of an element.
+  - ```direction: rtl;```
+  ### Word Spacing
+  - "word-spacing" specifies the space between words in text.
+  ### Text Shadow
+  - "Text-shadow" adds shadow to text.
+  - ```text-shadow: 3px 2px red;```
+    * horizontal shadow (3px)
+    * vertical shadow (2px) 
+    * color of the shadow (red)
 

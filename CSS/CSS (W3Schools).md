@@ -273,9 +273,27 @@ Not part of the element’s dimensions, or part of the total width and height of
   ### Word Spacing
   - "word-spacing" specifies the space between words in text.
   ### Text Shadow
-  - "Text-shadow" adds shadow to text.
+  - "text-shadow" adds shadow to text.
   - ```text-shadow: 3px 2px red;```
     * horizontal shadow (3px)
     * vertical shadow (2px) 
     * color of the shadow (red)
-
+## CSS Fonts
+The CSS font properties define the font family, boldness, size, and the style of a text.
+  ### Difference Between Serif and Sans-serif Fonts
+  - ![CSS Fonts](https://github.com/caofontaine/Notes/blob/master/CSS/img/serif.gif "CSS Fonts")
+  ### CSS Font Families
+  - generic family - a group of font families with a similar look (like "Serif" or "Monospace")
+  - font family - a specific font family (like "Times New Roman" or "Arial")
+  - ![CSS Font Table](https://github.com/caofontaine/Notes/blob/master/CSS/img/fonttable.png "CSS Font Table")
+  ### Font Family
+  - "font-family" sets the font family.
+  - Can hold several font names as a fallback system. If the first one isn’t available, it uses the next one.
+    * Pick a specific font first, then end with a generic family.
+    * ```font-family: "Times New Roman", Times, serif;```
+  ### Font Style
+  - "font-style" sets the style of your font. Mostly is used for italics.
+  - Property has 3 values:
+    * normal - The text is shown normally
+    * italic - The text is shown in italics
+    * oblique - The text is "leaning" (oblique is very similar to italic, but less supported)

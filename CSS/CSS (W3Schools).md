@@ -297,3 +297,32 @@ The CSS font properties define the font family, boldness, size, and the style of
     * normal - The text is shown normally
     * italic - The text is shown in italics
     * oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+  ### Font Size
+  - "font-size" sets the size of the text.
+  - Font size can be absolute or relative size.
+    * Absolute
+      - Sets the text to a specified size
+      - Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+      - Absolute size is useful when the physical size of the output is known
+    * Relative
+      - Sets the size relative to surrounding elements
+      - Allows a user to change the text size in browsers
+  - If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).
+  ### Set Font Size With Pixels
+  - ```font-size: 40px;```
+  ### Set Font Size With Em
+  - Allows user to resize text in browser menu.
+  - W3C recommended unit.
+  - pixels/16=em
+  - ```font-size: 2.5em; /* 40px/16=2.5em */```
+  ### Use A Combination of Percent and Em
+  - Setting font size in percent and em allows the same size in all browsers and allows the browsers to resize the text.
+  ### Font Weight
+  - "font-weight" specifies weight of a font.
+  - ```font-weight: bold;```
+  ### Font Weight
+  - "font-variant" specifies whether or not text should be displayed in small-caps font.
+  - In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+## CSS Icons
+Simplest way to add icons is to add an external library.
+Use the icon specified class from that library on any inline element.

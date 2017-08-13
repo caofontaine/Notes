@@ -326,3 +326,43 @@ The CSS font properties define the font family, boldness, size, and the style of
 ## CSS Icons
 Simplest way to add icons is to add an external library.
 Use the icon specified class from that library on any inline element.
+## CSS Links
+  ### Styling Links
+  - Links can be styled with any property.
+  - Links can be styled depending on what state they’re in.
+    * a:link - a normal, unvisited link
+    * a:visited - a link the user has visited
+    * a:hover - a link when the user mouses over it
+    * a:active - a link the moment it is clicked
+    * When you edit the style each state, you must follow these rules:
+      - a:hover MUST come after a:link and a:visited
+      - a:active MUST come after a:hover
+  ### Text Decoration
+  - "text-decoration" is used typically to remove underlines from links.
+  ### Background Color
+  - "background-color" is used to change the background color of links.
+  ### Advanced - Link Buttons
+  - ```
+       a:link, a:visited {
+         background-color: #f44336;
+         color: white;
+         padding: 14px 25px;
+         text-align: center; 
+         text-decoration: none;
+         display: inline-block;
+       }
+
+       a:hover, a:active {
+         background-color: red;
+       }
+    ```
+    * ![CSS Link Button](https://github.com/caofontaine/Notes/blob/master/CSS/img/linkbutton.png "CSS Link Button")
+## CSS Lists
+  ### HTML Lists and CSS List Properties
+  - HTML lists - ordered (&lt;ol&gt;) & unordered (&lt;ul&gt;)
+  - CSS list properties allow you to:
+    * Set different list item markers for ordered  and unordered lists
+    * Set an image as the list item marker
+    * Add background colors to lists and list items
+  ### Different List Item Markers
+  - "list-style-type" specifies the type of list item marker

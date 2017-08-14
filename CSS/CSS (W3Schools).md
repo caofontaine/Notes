@@ -366,3 +366,37 @@ Use the icon specified class from that library on any inline element.
     * Add background colors to lists and list items
   ### Different List Item Markers
   - "list-style-type" specifies the type of list item marker
+  ### An Image As The List Item Marker
+  - "list-style-image" specifies an image as the list item marker
+  - ```list-style-image: url('sqpurple.gif');```
+  ### Position The List Item Markers
+  - "list-style-position" specifies whether the list item marker should be inside or outside content flow
+    * "outside" is the default setting
+  ### Remove Default Settings
+  - Set list-style-type to “none” to remove markers/bullets
+  - Since lists have margins and padding, set those properties to 0.
+  ### List - Shorthand Property
+  - "list-style" is the shorthand
+  - ```list-style: square inside url("sqpurple.gif");```
+    * list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+    * list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)
+    * list-style-image (specifies an image as the list item marker)
+      - If one of the property values is missing, it will take its default value.
+  ### Styling List With Colors
+  - Anything added to the &lt;ol&gt; or &lt;ul&gt; tags will affect the inner &lt;li&gt; tags.
+## CSS Tables
+  ### Table Borders
+  - Specify border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; using "border" property.
+  ### Collapse Table Borders
+  - Use "border-collapse" property if you want table borders to be collapsed into a single border.
+  ### Table Width and Height
+  - Just use "width" and "height" properties on table.
+  ### Horizontal Alignment
+  - Use "text-align" property to set text to be left, right, or center.
+  - &lt;th&gt; is center aligned by default.
+  ### Vertical Alignment
+  - Use "vertical-align" to set vertical alignment to be top, middle, or bottom.
+  - For &lt;th&gt; and &lt;td&gt;, middle is the default value.
+  ### Table Padding
+  - Use "padding" put space between border and content.
+

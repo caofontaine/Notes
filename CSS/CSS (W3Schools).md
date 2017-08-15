@@ -430,5 +430,36 @@ Use the icon specified class from that library on any inline element.
   ### Hide An Element - display: none or visibility: hidden?
   - display: none will hide an element and the page is displayed as if the element doesn’t exist
   - visibility: hidden will hide an element, but the page layout will be shown as if the element was still there
+## CSS Max-width
+  ### Using width, max-width, and margin: auto;
+  - Setting the width of a block-level element will prevent it from stretching to the full width available.
+  - Setting the margin to auto will horizontally center the element within its container.
+  - Using “max-width” will prevent a scroll bar from appearing when viewing the page on a smaller screen.
+## CSS Position
+  ### The position Property
+  - Specifies type of positioning method used for an element.
+  - There are 4 position values:
+    * static
+    * relative
+    * fixed
+    * absolute
+      - Elements are positioned by top, bottom, left, right properties.
+      - This doesn’t work unless a position is defined, they also work differently for each type of positioning.
+  ### position: static;
+  - HTML elements are positioned static by default.
+  - Positioned according to the normal flow of the page.
+  ### position: relative;
+  - HTML elements are positioned relative to its normal position.
+  - Any settings on the top, right, bottom, or left properties will position the element away from its normal positioning.
+  - Other content will not be adjusted to fit into the gap left by the element.
+  ### position: fixed;
+  - HTML elements are position relative to the viewport, meaning it is always in the same position even if the page is scrolled.
+  - A fixed element doesn’t leave a gap in the page where it normally is.
+  ### position: absolute;
+  - HTML elements are positioned relative to the nearest positioned ancestor
+  - If an absolute positioned element has no ancestor, it uses the document body, which then moves along with page scrolling.
+  ### Overlapping Elements
+  - The "z-index: property specifies the stack order of an element (which element is in front of the other).
+
 
 

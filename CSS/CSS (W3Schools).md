@@ -399,4 +399,36 @@ Use the icon specified class from that library on any inline element.
   - For &lt;th&gt; and &lt;td&gt;, middle is the default value.
   ### Table Padding
   - Use "padding" put space between border and content.
+  ### Horizontal Dividers
+  - Use "border-bottom" on &lt;th&gt; and &lt;td&gt; to set horizontal dividers.
+  ### Hoverable Tables
+  - Use ":hover" selector on &lt;tr&gt; to highlight table rows when hovered over it.
+  - ```tr:hover {background-color: #f5f5f5}```
+  ### Striped Tables
+  - Use "nth-child()" selector to add "background-color" to even or odd rows.
+  - ```tr:nth-child(even) {background-color: #f2f2f2}```
+  ### Table Color
+  - Use "background-color" to set background color of table elements.
+  - Use "color" set text color of table elements.
+  ### Responsive Table
+  - Use container element with "overflow-x: auto" to make a table responsive.
+  - Will display a horizontal scroll bar if table is viewed in a small screen
+## CSS Display
+  ### The display Property
+  - The "display" property determines if/how an element is displayed.
+  - Default "display" value is block or inline.
+  ### Block-level Elements
+  - Block-level elements always start on a new line and takes the full width available.
+  - Example of elements - &lt;div&gt;, &lt;h1&gt;-&lt;h6&gt;, etc.
+  ### Inline Elements
+  - Inline elements don’t start on a new line and only takes as much width necessary.
+  - Example of elements - &lt;a&gt;, &lt;span&gt;, &lt;img&gt;
+  ### Display: none;
+  - Commonly used with JavaScript to show or hide elements without deleting them.
+  ### Override The Default Display Value
+  - You can override the default display value for any element by going from inline to block, or vise-versa.
+  ### Hide An Element - display: none or visibility: hidden?
+  - display: none will hide an element and the page is displayed as if the element doesn’t exist
+  - visibility: hidden will hide an element, but the page layout will be shown as if the element was still there
+
 

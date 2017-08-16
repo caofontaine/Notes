@@ -460,6 +460,35 @@ Use the icon specified class from that library on any inline element.
   - If an absolute positioned element has no ancestor, it uses the document body, which then moves along with page scrolling.
   ### Overlapping Elements
   - The "z-index: property specifies the stack order of an element (which element is in front of the other).
+## CSS Overflow
+The "overflow" property specifies whether to clip content or add scroll bars when the content is too big to fit in a specified area.
+The property has the following values:
+- visible - Default. The overflow is not clipped. It renders outside the element's box
+- hidden - The overflow is clipped, and the rest of the content will be invisible
+- scroll - The overflow is clipped, but a scrollbar is added to see the rest of the content
+- auto - If overflow is clipped, a scrollbar should be added to see the rest of the content
+  ### overflow: visible
+  - Overflow is visible by default, meaning content is not clipped and will render outside an element’s box.
+  ### overflow: hidden
+  - The overflow is clipped and the rest of the content is hidden.
+  ### overflow: scroll
+  - Overflow is clipped and scroll bar is shown inside the content box.
+  ### overflow: auto
+  - Only adds scroll bars when necessary.
+  ### overflow-x and overflow-y
+  - Specifies what to do to overflow horizontally and vertically.
+## CSS Float
+The float property specifies whether or not an element should float.
+The clear property is used to control the behavior of floating elements.
+  ### The float Property
+  - Can be used to wrap text around images
+  ### The clear Property
+  - Used to control the behavior of floating elements
+  - Elements after a floating element will flow around it. To avoid this, use the clear property.
+  - The clear property specifies on which sides of an element floating elements are not allowed to float
+  ### The clearfix Hack
+  - If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.
+  - Then we can add overflow: auto; to the containing element to fix this problem
 
 
 

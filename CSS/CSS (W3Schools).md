@@ -527,5 +527,42 @@ Using "inline-block" value of "display" property can create a grid of boxes that
          transform: translate(-50%, -50%);
        }
     ```
+## CSS Combinators
+A combinator is something that describes the relationship between selectors.
+There are four different combinators in CSS3:
+- selector (space)
+- child selector (>)
+- adjacent sibling selector (+)
+- general sibling selector (~)
+  ### Descendant Selector
+  - Matches all elements that are descendants of a specified element.
+  - div p
+  ### Child Selector
+  - Selects all elements that are the immediate child of a specified element.
+  - div > p
+  ### Adjacent Sibling Selector
+  - Selects all elements that are the adjacent siblings of a specified element.
+  - Sibling elements must have the same parent, and "adjacent" means "immediately following".
+  - div + p
+    * Selects all <p> elements that are placed immediately after <div>
+  ### General Sibling Selector
+  - Selects all elements that are siblings of a specified element.
+  - div ~ p
+    *Selects all <p> elements that are siblings of <div>
+## CSS Pseudo-classes
+  ### What Are Pseudo-Classes?
+  - Used to define the special state of an element.
+  - Examples:
+    * Style an element when a user mouses over it
+    * Style visited and unvisited links differently
+    * Style an element when it gets focus
+    * ```
+	     selector:pseudo-class {
+           property:value;
+         }
+	  ```
+  ### Anchor Pseudo-Classes
+  ### Pseudo-classes and CSS Classes
+  - Can combine a pseudo-class with a CSS class.
 
 

@@ -489,6 +489,43 @@ The clear property is used to control the behavior of floating elements.
   ### The clearfix Hack
   - If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.
   - Then we can add overflow: auto; to the containing element to fix this problem
-
+    * Works as long as you control margins and padding (or you get scrollbars)
+  - More modern clearfix hack
+    * ```
+	     .clearfix::after {
+           content: "";
+           clear: both;
+           display: table;
+         }
+	  ```
+## CSS Inline-block
+Using "inline-block" value of "display" property can create a grid of boxes that fills the browser width and wraps when the browser is resized.
+## CSS Align
+  ### Center Align Elements
+  - Horizontally center a block element by setting margin: auto
+  - Setting the width of the element will prevent it from stretching out to the edges of its container.
+  - The element will then take up the specified width, and the remaining space will be split equally between the two margins.
+  ### Center Align Text
+  - Use "text-align" property with “center” value.
+  ### Center An Image
+  - Use margin: auto and display: block to make it a block element.
+  ### Left and Right Align - Using position
+  - Using position: absolute is one way to align elements left or right.
+  ### Left and Right Align - Using float
+  ### Center Vertically - Using padding
+  - Use padding to center elements vertically.
+  - To center elements horizontally and vertically, use padding and text-align.
+  ### Center Vertically - Using line-height
+  - Another trick is to use the line-height property with a value that is equal to the height property.
+  ### Center Vertically - Using position & transform
+  - ```
+       .center p {
+         margin: 0;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+       }
+    ```
 
 

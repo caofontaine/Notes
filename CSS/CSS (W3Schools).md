@@ -544,11 +544,11 @@ There are four different combinators in CSS3:
   - Selects all elements that are the adjacent siblings of a specified element.
   - Sibling elements must have the same parent, and "adjacent" means "immediately following".
   - div + p
-    * Selects all <p> elements that are placed immediately after <div>
+    * Selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt;
   ### General Sibling Selector
   - Selects all elements that are siblings of a specified element.
   - div ~ p
-    *Selects all <p> elements that are siblings of <div>
+    * Selects all &lt;p&gt; elements that are siblings of &lt;div&gt;
 ## CSS Pseudo-classes
   ### What Are Pseudo-Classes?
   - Used to define the special state of an element.
@@ -564,5 +564,52 @@ There are four different combinators in CSS3:
   ### Anchor Pseudo-Classes
   ### Pseudo-classes and CSS Classes
   - Can combine a pseudo-class with a CSS class.
+  - ```
+       a.highlight:hover {
+         color: #ff0000;
+       }
+    ```
+  ### Hover on <div>
+  ### Simple Tooltip Hover
+  ### The :first-child Pseudo-class
+  - Matches the specified element that is the first child of another element.
+  ### Match the first <i> element in all <p> elements
+  ### Match all <i> elements in all first child <p> elements
+  ### The :lang Pseudo-class
+  - Define special rules for different languages.
+## CSS Pseudo-elements
+  ### What Are Pseudo-Elements?
+  - Used to style different parts of an element.
+  - Examples:
+    * Style the first letter, or line, of an element
+    * Insert content before, or after, the content of an element
+    * ```
+	     selector::pseudo-element {
+           property:value;
+         }
+	  ```
+  ### The ::first-line Pseudo-element
+  - Adds special style to the first line of an element.
+  - ``` p::first-line ```
+  - Can only be applied to block level elements.
+  ### The ::first-letter Pseudo-element
+  - Adds special style to the first letter of a text.
+  - ``` p::first-letter ```
+  - Can only be applied to block level elements.
+  ### Pseudo-elements and CSS Classes
+  - Pseudo-elements can be combined with CSS classes
+  - ``` p.intro::first-letter ```
+  ### Multiple Pseudo-Elements
+  - The ::before Pseudo-element
+  - Inserts content before the content of an element.
+  - ``` h1::before ```
+  ### The ::after Pseudo-element
+  - Inserts content after the content of an element.
+  - ``` h1::after ```
+  ### The ::selection Pseudo-element
+  - Matches portion of an element selected by user.
+  - color, background, cursor, and outline properties can be applied to it.
+  - ``` ::selection ```
+
 
 

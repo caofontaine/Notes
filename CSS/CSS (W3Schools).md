@@ -569,12 +569,12 @@ There are four different combinators in CSS3:
          color: #ff0000;
        }
     ```
-  ### Hover on <div>
+  ### Hover on &lt;div&gt;
   ### Simple Tooltip Hover
   ### The :first-child Pseudo-class
   - Matches the specified element that is the first child of another element.
-  ### Match the first <i> element in all <p> elements
-  ### Match all <i> elements in all first child <p> elements
+  ### Match the first &lt;i&gt; element in all &lt;p&gt; elements
+  ### Match all &lt;i&gt; elements in all first child &lt;p&gt; elements
   ### The :lang Pseudo-class
   - Define special rules for different languages.
 ## CSS Pseudo-elements
@@ -610,6 +610,31 @@ There are four different combinators in CSS3:
   - Matches portion of an element selected by user.
   - color, background, cursor, and outline properties can be applied to it.
   - ``` ::selection ```
+## CSS Opacity
+The "opacity" property specifies the opacity/transparency of an element.
+  ### Transparent Image
+  - The "opacity" property can take a value from 0.0-1.0. The lower the value, the more transparent.
+  ### Transparent Hover Effect
+  - By using the :hover selector, you can change the opacity of an element by mousing over.
+  ### Transparent Box
+  - When setting the opacity of an element, if there are other elements nested inside it, it will inherit the same opacity.
+  ### Transparency Using RGBA
+  - If you don’t want child elements inheriting opacity, you can use the rgba color value (red, green, blue, alpha). The alpha parameter will be your opacity.
+  - ``` rgba(76, 175, 80, 0.3) ```
+  ### Text In A Transparent Box
+  - When setting the opacity of an element, if there are other elements nested inside it, it will inherit the same opacity.
+## CSS Navigation Bar
+  ### Navigation Bar = List of Links
+  - Needs standard HTML as a base.
+  - A list of links, so &lt;ul&gt; and &lt;li&gt; elements.
+  ### Vertical Navigation Bar
+  - Can style &lt;a&gt; elements in the list to build a vertical navigation bar.
+  ### Horizontal Navigation Bar
+  - Can be done either using inline or floating list items.
+  - Inline List Items:
+    * Set &lt;li&gt; element’s "display" to be inline since they are by default block elements.
+  - Floating List Items:
+    * Set the "float" property so list items can slide next to each other.
 
 
 

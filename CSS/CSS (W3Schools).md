@@ -635,6 +635,34 @@ The "opacity" property specifies the opacity/transparency of an element.
     * Set &lt;li&gt; element’s "display" to be inline since they are by default block elements.
   - Floating List Items:
     * Set the "float" property so list items can slide next to each other.
+## CSS Dropdowns
+  ### Basic Dropdown
+  - Use any element to open the dropdown (&lt;span&gt;, &lt;button&gt;, etc.)
+  - Use a &lt;div&gt; to wrap around dropdown content.
+  - Wrap all content in a &lt;div&gt; to position the dropdown.
+  - The .dropdown class is needed to be position: relative in order to have dropdown content right below it using position: absolute.
+  - .dropdown-content will be hidden, but appears on hover.
+## CSS Tooltips
+  ### Basic Tooltip
+  - Use a container element (like &lt;div&gt;) and add the "tooltip" class to it. When the user mouse over this &lt;div&gt;, it will show the tooltip text.
+  - The tooltip text is placed inside an inline element (like &lt;span&gt;) with class="tooltiptext".
+  - The tooltip class uses position:relative, which is needed to position the tooltip text (position:absolute).
+  - The tooltiptext class holds the actual tooltip text. It is hidden by default, and will be visible on hover.
+  - The CSS3 border-radius property is used to add rounded corners to the tooltip text.
+  - The :hover selector is used to show the tooltip text when the user moves the mouse over the &lt;div&gt; with class="tooltip".
+## CSS Image Gallery
+## CSS Image Sprites
+## CSS Attr Selectors
+  ### Style HTML Element With Specific Attributes
+  - It is possible to style HTML elements that have specific attributes or attribute values.
+  ### CSS [attribute] Selector
+  - [attribute] selector is used to select element with a specific attribute.
+  - a[target]
+    * Selects all &lt;a&gt; elements with "target" attribute.
+  ### CSS [attribute=”value”] Selector
+  - [attribute="value"] is used to select elements with a specific attribute value.
+  - a[target="_blank"]
+    * Selects all &lt;a&gt; elements that have a "target" attribute value of "_blank".
 
 
 

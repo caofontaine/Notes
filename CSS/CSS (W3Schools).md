@@ -659,10 +659,52 @@ The "opacity" property specifies the opacity/transparency of an element.
   - [attribute] selector is used to select element with a specific attribute.
   - a[target]
     * Selects all &lt;a&gt; elements with "target" attribute.
-  ### CSS [attribute=”value”] Selector
+  ### CSS [attribute="value"] Selector
   - [attribute="value"] is used to select elements with a specific attribute value.
   - a[target="_blank"]
     * Selects all &lt;a&gt; elements that have a "target" attribute value of "_blank".
+  ### CSS [attribute~="value"] Selector
+  - [attribute~="value"] is used to select elements with a specific attribute value with a specific word.
+  - [title~="flower"]
+    * selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower"
+  ### CSS [attribute|="value"] Selector
+  - [attribute|="value"] is used to select elements with a specific attribute value starting with a specified value.
+  - [class|="top"]
+    * Selects all elements that have a class value of "top".
+    * Value must be a whole word, “top” alone, or separated with a hyphen.
+  ### CSS [attribute^="value"] Selector
+  - [attribute^=”value”] is used to select elements whose attribute value begins with a specified value.
+  - [class^="top"]
+    * Selects all elements that have a class value of "top".
+    * Doesn’t have to be a whole word.
+  ### CSS [attribute$="value"] Selector
+  - [attribute$="value"] is used to select elements whose attribute value ends with a specified value.
+  - [class$="test"]
+    * Doesn’t have to be a whole word.
+  ### CSS [attribute*="value"] Selector
+  - [attribute*="value"] is used to select elements whose attribute value contains a specified value.
+  - [class*="te"]
+    * Doesn’t have to be a whole word.
+  ### Styling Forms
+## CSS Forms
+  ### Styling Input Fields
+  - To select a specific input field, use input[type=&lt;input_type&gt;]
+## CSS Counters
+"Variables" maintained by CSS rules
+  ### Automatic Numbering With Counters
+  - counter-reset - Creates or resets a counter
+  - counter-increment - Increments a counter value
+  - content - Inserts generated content
+  - counter() or counters() function - Adds the value of a counter to an element
+  - ```
+       body {
+	     counter-reset: section;
+       }
 
-
+       h2::before {
+	     counter-increment: section;
+	     content: "Section " counter(section) ": ";
+       }
+    ```
+  ### Nesting Counters
 
